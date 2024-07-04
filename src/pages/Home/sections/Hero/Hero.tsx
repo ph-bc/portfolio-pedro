@@ -3,7 +3,7 @@ import { Box, Container, Grid, Typography, styled } from "@mui/material";
 import avatar from "@assets/images/my-photo.png";
 
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 import StyledButton from "@components/StyledButton/StyledButton";
 import { AnimatedBackground } from "@components/AnimatedBackground/AnimatedBackground";
@@ -58,7 +58,7 @@ export default function Hero() {
               variant="h2"
               textAlign="center"
             >
-              I'm a Computer Scientist
+              Cientista da Computação
             </Typography>
             <Grid
               container
@@ -85,7 +85,7 @@ export default function Hero() {
                     e.preventDefault();
                   }}
                 >
-                  <ContactPageIcon />
+                  <AlternateEmailIcon />
                   <Typography>Entre em contato</Typography>
                 </StyledButton>
               </Grid>
