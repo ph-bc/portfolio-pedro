@@ -11,9 +11,6 @@ export default function StyledButton({ children, onClick }: StyledButtonProps) {
     backgroundColor: "transparent",
     borderRadius: "3px",
     color: theme.palette.primary.contrastText,
-    "&:hover": {
-      backgroundColor: theme.palette.secondary.light,
-    },
     width: "100%",
     padding: "5px 15px",
     display: "inline-flex",
@@ -21,6 +18,11 @@ export default function StyledButton({ children, onClick }: StyledButtonProps) {
     justifyContent: "center",
     cursor: "pointer",
     gap: "10px",
+    transition: "background-color 0.3s ease-in-out",
+
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+    },
   }));
 
   return (

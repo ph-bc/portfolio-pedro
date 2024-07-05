@@ -27,24 +27,24 @@ export default function StyledFooter() {
         <IconsContainer>
           <IconButton
             aria-label="GitHub"
-            href="https://github.com/your-profile"
+            href="https://github.com/ph-bc"
             target="_blank"
           >
             <GitHubIcon />
           </IconButton>
           <IconButton
             aria-label="LinkedIn"
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/ph-bc/"
             target="_blank"
           >
             <LinkedInIcon />
           </IconButton>
-          <IconButton aria-label="Email" href="mailto:your-email@example.com">
+          <IconButton aria-label="Email" href="mailto:pedro_berchior@outlook.com">
             <EmailIcon />
           </IconButton>
         </IconsContainer>
         <Typography variant="body1" color="textSecondary" align="center">
-          2024 &copy; Pedro Cardoso - Todos os direitos reservados
+          2024 &copy; Pedro Berchior - Todos os direitos reservados
         </Typography>
       </Container>
     </FooterContainer>

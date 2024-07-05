@@ -8,6 +8,8 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import StyledButton from "@components/StyledButton/StyledButton";
 import { AnimatedBackground } from "@components/AnimatedBackground/AnimatedBackground";
 
+import cv from "@assets/documents/cv.pdf";
+
 export default function Hero() {
   const StyledHero = styled("div")(({ theme }) => ({
     height: "100vh",
@@ -69,10 +71,23 @@ export default function Hero() {
               pb={3}
             >
               <Grid item xs={12} md={5} display="flex" justifyContent="center">
+                {/* */}
                 <StyledButton
                   onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                     e.preventDefault();
-                    window.open("/assets/documents/cv.pdf", "_blank");
+                    try {
+                      const link = document.createElement("a");
+                      link.href = cv;
+                      link.download = "cv.pdf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    } catch (error) {
+                      console.error(
+                        "Erro ao fazer o download do arquivo:",
+                        error
+                      );
+                    }
                   }}
                 >
                   <FileDownloadIcon />
@@ -81,8 +96,11 @@ export default function Hero() {
               </Grid>
               <Grid item xs={12} md={5} display="flex" justifyContent="center">
                 <StyledButton
-                  onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                    e.preventDefault();
+                  onClick={() => {
+                    window.open(
+                      "mailto:pedro_berchior@outlook.com?subject=Contato%20via%20Portfólio",
+                      "_self"
+                    );
                   }}
                 >
                   <AlternateEmailIcon />

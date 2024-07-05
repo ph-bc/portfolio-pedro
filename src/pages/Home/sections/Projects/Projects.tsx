@@ -12,20 +12,20 @@ import {
 
 export default function Projects() {
   const StyledProjectCard = styled(Card)(({ theme }) => ({
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    textAlign: "left",
-    padding: "10px 5px",
-    minHeight: "100%",
-    backgroundColor: "transparent",
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    textAlign: 'left',
+    padding: theme.spacing(2, 1),
+    minHeight: '100%',
+    backgroundColor: 'transparent',
     border: `solid 1px ${theme.palette.primary.contrastText}`,
   }));
 
   return (
-    <StyledSection darkBackground>
+    <StyledSection id="projects" darkBackground>
       <Container maxWidth="lg">
-        <Grid container spacing={1} mt={4} mb={4}>
+        <Grid container spacing={1} mt={3} mb={4}>
           <Grid item xs={12} md={12}>
             <Typography
               color="primary.contrastText"
@@ -82,8 +82,7 @@ export default function Projects() {
                   </CardContent>
                   <CardActions>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://cine-tag-opal.vercel.app/",
                           "_blank"
@@ -93,8 +92,7 @@ export default function Projects() {
                       Ver projeto
                     </StyledButton>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://github.com/ph-bc/cine-tag",
                           "_blank"
@@ -150,8 +148,7 @@ export default function Projects() {
                   </CardContent>
                   <CardActions>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://space-app-zeta.vercel.app/",
                           "_blank"
@@ -161,8 +158,7 @@ export default function Projects() {
                       Ver projeto
                     </StyledButton>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://github.com/ph-bc/gallery",
                           "_blank"
@@ -220,16 +216,14 @@ export default function Projects() {
                   </CardContent>
                   <CardActions>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open("https://p-blog-two.vercel.app/", "_blank");
                       }}
                     >
                       Ver projeto
                     </StyledButton>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://github.com/ph-bc/p-blog",
                           "_blank"
@@ -287,8 +281,7 @@ export default function Projects() {
                   </CardContent>
                   <CardActions>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://pedro-matamosquito.netlify.app/",
                           "_blank"
@@ -298,8 +291,7 @@ export default function Projects() {
                       Ver projeto
                     </StyledButton>
                     <StyledButton
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.preventDefault();
+                      onClick={() => {
                         window.open(
                           "https://github.com/ph-bc/app-mata-mosquito",
                           "_blank"

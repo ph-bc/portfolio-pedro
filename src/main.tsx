@@ -6,7 +6,9 @@ import theme from "./theme.ts";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    {/* Material UI Theme Provider to apply the theme globally */}
     <ThemeProvider theme={theme}>
+      {/* CSS Baseline to normalize browser styles */}
       <CssBaseline />
       <App />
     </ThemeProvider>

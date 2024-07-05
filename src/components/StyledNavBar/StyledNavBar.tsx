@@ -10,9 +10,36 @@ export default function StyledNavBar() {
     <>
       <AppBar position="absolute">
         <StyledToolbar>
-          <MenuItem>Sobre Mim</MenuItem>
-          <MenuItem>Habilidades</MenuItem>
-          <MenuItem>Projetos</MenuItem>
+          <MenuItem
+            onClick={() => {
+              const section = document.getElementById("about-me");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Sobre Mim
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              const section = document.getElementById("skills");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Habilidades
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              const section = document.getElementById("projects");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Projetos
+          </MenuItem>
         </StyledToolbar>
       </AppBar>
     </>

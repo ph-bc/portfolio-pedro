@@ -12,7 +12,7 @@ interface StyledCardProps {
   children: React.ReactNode;
 }
 export default function StyledCard({ variant, children }: StyledCardProps) {
-  const StyledCard = styled(Card)(() => ({
+    const StyledCard = styled(Card)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -20,7 +20,7 @@ export default function StyledCard({ variant, children }: StyledCardProps) {
     textAlign: "center",
 
     "& .MuiCardContent-root:last-child": {
-      padding: "12px",
+      padding: theme.spacing(1),
     },
   }));
 

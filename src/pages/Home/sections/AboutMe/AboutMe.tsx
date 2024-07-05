@@ -12,20 +12,20 @@ import SchoolIcon from "@mui/icons-material/School";
 import StyledCard from "@components/StyledCard/StyledCard";
 import StyledSection from "@components/StyledSection/StyledSection";
 
-export default function About() {
+export default function AboutMe() {
   const StyledDivider = styled(Divider)(({ theme }) => ({
     width: "100%",
     height: "1px",
     backgroundColor: theme.palette.primary.main,
-    marginTop: "24px",
-    marginBottom: "12px",
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(2),
   }));
 
   return (
-    <StyledSection>
+    <StyledSection id="about-me">
       <Container maxWidth="lg">
         <Grid container mt={4} mb={6}>
-          {/* Sobre Mim */}
+          {/* About Me */}
           <Grid item xs={12} md={12}>
             <Typography
               color="primary"
@@ -81,7 +81,7 @@ export default function About() {
                   color="primary"
                   variant="body1"
                   textAlign="justify"
-                  mt={5}
+                  mt={4}
                 >
                   Olá, meu nome é Pedro, tenho 25 anos e estou prestes a me
                   formar em Ciência da Computação. Durante minha jornada
@@ -106,8 +106,8 @@ export default function About() {
             </Grid>
           </Grid>
 
-          {/* Habilidades */}
-          <Grid item xs={12} md={12}>
+          {/* Skills */}
+          <Grid item xs={12} md={12} id="skills">
             <Typography
               color="primary"
               variant="h3"

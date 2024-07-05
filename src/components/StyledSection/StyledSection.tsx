@@ -1,12 +1,14 @@
 import { styled } from "@mui/material";
 
 interface StyledSectionProps {
-  children: React.ReactNode;
+  id: string;
   darkBackground?: boolean;
+  children: React.ReactNode;
 }
 export default function StyledSection({
-  children,
+  id,
   darkBackground = false,
+  children,
 }: StyledSectionProps) {
   const StyledSection = styled("section")(({ theme }) => ({
     display: "flex",
@@ -16,5 +18,5 @@ export default function StyledSection({
       : theme.palette.primary.contrastText,
   }));
 
-  return <StyledSection>{children}</StyledSection>;
+  return <StyledSection id={id}>{children}</StyledSection>;
 }
