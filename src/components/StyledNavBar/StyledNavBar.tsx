@@ -1,6 +1,6 @@
 import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
 
-export default function NavBar() {
+export default function StyledNavBar() {
   const StyledToolbar = styled(Toolbar)(() => ({
     display: "flex",
     justifyContent: "space-evenly",

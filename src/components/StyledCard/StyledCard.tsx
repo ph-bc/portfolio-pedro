@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardContent,
-  styled,
-  PaperPropsVariantOverrides,
-} from "@mui/material";
+import { Card, styled, PaperPropsVariantOverrides } from "@mui/material";
 
 import { OverridableStringUnion } from "@mui/types";
 
@@ -31,9 +26,7 @@ export default function StyledCard({ variant, children }: StyledCardProps) {
 
   return (
     <>
-      <StyledCard variant={variant}>
-        <CardContent>{children}</CardContent>
-      </StyledCard>
+      <StyledCard variant={variant}>{children}</StyledCard>
     </>
   );
 }

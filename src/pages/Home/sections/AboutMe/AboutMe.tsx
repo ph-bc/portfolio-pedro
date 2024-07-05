@@ -1,16 +1,18 @@
-import { Container, Divider, Grid, Typography, styled } from "@mui/material";
+import {
+  CardContent,
+  Container,
+  Divider,
+  Grid,
+  Typography,
+  styled,
+} from "@mui/material";
 
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import SchoolIcon from "@mui/icons-material/School";
 import StyledCard from "@components/StyledCard/StyledCard";
+import StyledSection from "@components/StyledSection/StyledSection";
 
 export default function About() {
-  const StyledSection = styled("section")(({ theme }) => ({
-    marginTop: "24px",
-    marginBottom: "24px",
-    backgroundColor: theme.palette.primary.contrastText,
-  }));
-
   const StyledDivider = styled(Divider)(({ theme }) => ({
     width: "100%",
     height: "1px",
@@ -22,7 +24,7 @@ export default function About() {
   return (
     <StyledSection>
       <Container maxWidth="lg">
-        <Grid container spacing={1} justifyContent="center">
+        <Grid container mt={4} mb={6}>
           {/* Sobre Mim */}
           <Grid item xs={12} md={12}>
             <Typography
@@ -36,30 +38,42 @@ export default function About() {
             <Grid container spacing={2} justifyContent="center">
               <Grid item xs={12} md={3}>
                 <StyledCard variant="outlined">
-                  <WorkspacePremiumIcon />
-                  <Typography color="primary" variant="body1" fontWeight="bold">
-                    Experiência
-                  </Typography>
-                  <Typography color="primary" variant="body2">
-                    2+ anos
-                  </Typography>
-                  <Typography color="primary" variant="body2">
-                    Assistente de T.I.
-                  </Typography>
+                  <CardContent>
+                    <WorkspacePremiumIcon />
+                    <Typography
+                      color="primary"
+                      variant="body1"
+                      fontWeight="bold"
+                    >
+                      Experiência
+                    </Typography>
+                    <Typography color="primary" variant="body2">
+                      2+ anos
+                    </Typography>
+                    <Typography color="primary" variant="body2">
+                      Assistente de T.I.
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={12} md={3}>
                 <StyledCard variant="outlined">
-                  <SchoolIcon />
-                  <Typography color="primary" variant="body1" fontWeight="bold">
-                    Educação
-                  </Typography>
-                  <Typography color="primary" variant="body2">
-                    Cursando Bacharelado em
-                  </Typography>
-                  <Typography color="primary" variant="body2">
-                    Ciência da Computação
-                  </Typography>
+                  <CardContent>
+                    <SchoolIcon />
+                    <Typography
+                      color="primary"
+                      variant="body1"
+                      fontWeight="bold"
+                    >
+                      Educação
+                    </Typography>
+                    <Typography color="primary" variant="body2">
+                      Cursando Bacharelado em
+                    </Typography>
+                    <Typography color="primary" variant="body2">
+                      Ciência da Computação
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={12} md={12}>
@@ -103,89 +117,113 @@ export default function About() {
             >
               Habilidades
             </Typography>
-            <Grid container spacing={3} justifyContent="center">
+            <Grid container spacing={4}>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    React
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      React
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    Typescript
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      Typescript
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    Javascript
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      Javascript
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    HTML
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      HTML
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    CSS
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      CSS
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    Laravel
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      Laravel
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    PHP
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      PHP
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    Java
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      Java
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    C#
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      C#
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    Python
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      Python
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    Node.js
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      Node.js
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
               <Grid item xs={6} md={2}>
                 <StyledCard variant="outlined">
-                  <Typography color="primary" variant="body1">
-                    MySQL
-                  </Typography>
+                  <CardContent>
+                    <Typography color="primary" variant="body1">
+                      MySQL
+                    </Typography>
+                  </CardContent>
                 </StyledCard>
               </Grid>
             </Grid>
