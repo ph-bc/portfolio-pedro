@@ -25,7 +25,7 @@ export default function Projects() {
   return (
     <StyledSection darkBackground>
       <Container maxWidth="lg">
-        <Grid container spacing={1} mt={4}>
+        <Grid container spacing={1} mt={4} mb={4}>
           <Grid item xs={12} md={12}>
             <Typography
               color="primary.contrastText"

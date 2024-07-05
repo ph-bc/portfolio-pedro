@@ -1,3 +1,4 @@
+import StyledFooter from "@components/StyledFooter/StyledFooter";
 import About from "./sections/AboutMe/AboutMe";
 import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <StyledFooter />
     </>
   );
 }
