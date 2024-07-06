@@ -20,7 +20,7 @@
   {
     "name": "P-Blog",
     "date": "Abril de 2024",
-    "cover": "https://cdn.discordapp.com/attachments/1233291960077254679/1258537377702346832/p-blog-canvas.png?ex=668867c5&is=66871645&hm=a6d2f29ee6230238f1955ebbcdfc94c91c5921be30230084efe64f1c78a5e162&",
+    "cover": "https://cdn.discordapp.com/attachments/1233291960077254679/1258537377702346832/p-blog-canvas.png?ex=6689b945&is=668867c5&hm=d8130765ade29593a324bdfc6ef4823b5fd3619f3e7281070deb137fd73952c8&",
     "desc": "O P-Blog é um projeto React.js que funciona como um blog pessoal. Inclui uma página inicial com cartões postais e uma página 'Sobre mim', proporcionando uma interface simples e intuitiva para gerenciar e exibir o conteúdo do blog.",
     "technologies": "React, Javascript",
     "project": "https://p-blog-two.vercel.app/",
