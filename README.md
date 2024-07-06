@@ -26,7 +26,8 @@
   </ul>
 
   <h2>Deployment</h2>
-  <p>This project was implemented in Vercel and is accessible <a href="">here</a>.</p>
+  <p>This project was implemented in Vercel and is accessible <a href="https://pedro-berchior.vercel.app/">here</a>.</p>
+  ![Vercel](https://vercelbadge.vercel.app/api/ph-bc/portfolio-pedro)
 
   <h2>Contributions</h2>
   <p>Contributions are welcome! Whether you want to report a bug, request a feature, or contribute code, please feel free to open an issue or submit a pull request.</p>
