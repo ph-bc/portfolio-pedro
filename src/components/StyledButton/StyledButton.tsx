@@ -1,8 +1,8 @@
 import { styled } from "@mui/material";
 
 interface StyledButtonProps {
-  children: React.ReactNode;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  children: React.ReactNode;
 }
 
 export default function StyledButton({ children, onClick }: StyledButtonProps) {

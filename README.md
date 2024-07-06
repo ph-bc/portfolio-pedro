@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+<h1>My Portfolio</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <p>This is my personal portfolio, developed using React, Typescript, and Vite, utilizing Material UI for the interface. It is fully responsive for all devices, including mobile.</p>
 
-Currently, two official plugins are available:
+  <h2>About Me</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <p>Hello! My name is Pedro, I am a developer passionate about creating creative and efficient solutions. I'm learning front-end development with React and I'm always looking for new challenges to improve my skills.</p>
 
-## Expanding the ESLint configuration
+  <h2>Skills</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  <ul>
+    <li>Front-end Development with React and Typescript</li>
+    <li>UI/UX Design with Material UI</li>
+    <li>Responsive web development</li>
+    <li>Continuous Integration and Deployment with Vercel</li>
+    <li>Creating accessible interfaces</li>
+  </ul>
 
-- Configure the top-level `parserOptions` property like this:
+  <h2>Features</h2>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+  <ul>
+    <li>Implementation of a detailed portfolio showcasing developed projects</li>
+    <li>Integration of a button to download resume</li>
+    <li>Integration of modern libraries and tools to ensure efficiency and performance</li>
+    <li>Responsive design to provide a consistent experience across different devices</li>
+  </ul>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  <h2>Deployment</h2>
+  <p>This project was implemented in Vercel and is accessible <a href="">here</a>.</p>
+
+  <h2>Contributions</h2>
+  <p>Contributions are welcome! Whether you want to report a bug, request a feature, or contribute code, please feel free to open an issue or submit a pull request.</p>
+
+  <h2>Contact</h2>
+  <p>You can contact me on my social media profiles which are available on my Github profile.</p>
+
+  <p>Thank you for visiting my portfolio! I hope you enjoy it!</p>

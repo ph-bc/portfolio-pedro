@@ -1,4 +1,5 @@
 import { Box, Container, IconButton, Typography, styled } from "@mui/material";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -39,7 +40,10 @@ export default function StyledFooter() {
           >
             <LinkedInIcon />
           </IconButton>
-          <IconButton aria-label="Email" href="mailto:pedro_berchior@outlook.com">
+          <IconButton
+            aria-label="Email"
+            href="mailto:pedro_berchior@outlook.com"
+          >
             <EmailIcon />
           </IconButton>
         </IconsContainer>

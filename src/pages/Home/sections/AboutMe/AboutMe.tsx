@@ -9,8 +9,11 @@ import {
 
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import SchoolIcon from "@mui/icons-material/School";
+
 import StyledCard from "@components/StyledCard/StyledCard";
 import StyledSection from "@components/StyledSection/StyledSection";
+
+import skills from "@jsons/skills.json";
 
 export default function AboutMe() {
   const StyledDivider = styled(Divider)(({ theme }) => ({
@@ -118,114 +121,17 @@ export default function AboutMe() {
               Habilidades
             </Typography>
             <Grid container spacing={4}>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      React
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      Typescript
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      Javascript
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      HTML
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      CSS
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      Laravel
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      PHP
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      Java
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      C#
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      Python
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      Node.js
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-              <Grid item xs={6} md={2}>
-                <StyledCard variant="outlined">
-                  <CardContent>
-                    <Typography color="primary" variant="body1">
-                      MySQL
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
+              {skills.map((skill) => (
+                <Grid item xs={6} md={2}>
+                  <StyledCard variant="outlined">
+                    <CardContent>
+                      <Typography color="primary" variant="body1">
+                        {skill.name}
+                      </Typography>
+                    </CardContent>
+                  </StyledCard>
+                </Grid>
+              ))}
             </Grid>
           </Grid>
         </Grid>

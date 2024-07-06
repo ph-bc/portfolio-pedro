@@ -1,12 +1,12 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
 
-import avatar from "@assets/images/my-photo.png";
+import StyledButton from "@components/StyledButton/StyledButton";
+import { AnimatedBackground } from "@components/AnimatedBackground/AnimatedBackground";
 
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
-import StyledButton from "@components/StyledButton/StyledButton";
-import { AnimatedBackground } from "@components/AnimatedBackground/AnimatedBackground";
+import avatar from "@assets/images/my-photo.png";
 
 import cv from "@assets/documents/cv.pdf";
 

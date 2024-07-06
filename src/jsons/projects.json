@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Cine-Tag",
+    "date": "Maio de 2024",
+    "cover": "https://media.discordapp.net/attachments/1233291960077254679/1258628780398743643/cine-tag-canvas.png?ex=6688bce5&is=66876b65&hm=de510e48e238e032b7317195b28175605f6432dcdb9bc3cc8a441c786a12bd28&=&format=webp&quality=lossless&width=1400&height=671",
+    "desc": "Cine-tag é uma aplicação web desenvolvida com React que permite catalogar filmes e vídeos, além de favoritar seus títulos preferidos para fácil acesso.",
+    "technologies": "React, Javascript",
+    "project": "https://cine-tag-opal.vercel.app/",
+    "code": "https://github.com/ph-bc/cine-tag"
+  },
+  {
+    "name": "SpaceApp",
+    "date": "Abril de 2024",
+    "cover": "https://cdn.discordapp.com/attachments/1233291960077254679/1258619366598119465/space-app-canvas.png?ex=6688b421&is=668762a1&hm=b6e47ea345615a12a27ee875d55301a831576b007223c9297537c642fad35c1f&",
+    "desc": "SpaceApp é um aplicativo de galeria com imagens espaciais, incluindo galáxias, estrelas, luas e muito mais. Este projeto faz parte de um curso educacional sobre React da Alura.",
+    "technologies": "React, Javascript",
+    "project": "https://space-app-zeta.vercel.app/",
+    "code": "https://github.com/ph-bc/gallery"
+  },
+  {
+    "name": "P-Blog",
+    "date": "Abril de 2024",
+    "cover": "https://cdn.discordapp.com/attachments/1233291960077254679/1258537377702346832/p-blog-canvas.png?ex=668867c5&is=66871645&hm=a6d2f29ee6230238f1955ebbcdfc94c91c5921be30230084efe64f1c78a5e162&",
+    "desc": "O P-Blog é um projeto React.js que funciona como um blog pessoal. Inclui uma página inicial com cartões postais e uma página 'Sobre mim', proporcionando uma interface simples e intuitiva para gerenciar e exibir o conteúdo do blog.",
+    "technologies": "React, Javascript",
+    "project": "https://p-blog-two.vercel.app/",
+    "code": "https://github.com/ph-bc/p-blog"
+  },
+  {
+    "name": "Mata Mosquito",
+    "date": "Agosto de 2021",
+    "cover": "https://cdn.discordapp.com/attachments/1233291960077254679/1258633048338202654/mata-mosquito-canvas.png?ex=6688c0de&is=66876f5e&hm=08f876942cb4cfe3b59647dfd80e592ed3d13ef25b593eb0cdf684555af494fb&",
+    "desc": "Mata Mosquito é um jogo desenvolvido com HTML, CSS e JavaScript onde o jogador tem 3 vidas para matar mosquitos antes que o tempo acabe. Se falhar, perde uma vida. O jogo oferece três níveis de dificuldade, aumentando o desafio conforme o jogador avança.",
+    "technologies": "HTML, CSS, Javascript",
+    "project": "https://pedro-matamosquito.netlify.app/",
+    "code": "https://github.com/ph-bc/app-mata-mosquito"
+  }
+]

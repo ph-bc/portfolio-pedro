@@ -1,5 +1,4 @@
 import { Card, styled, PaperPropsVariantOverrides } from "@mui/material";
-
 import { OverridableStringUnion } from "@mui/types";
 
 interface StyledCardProps {
@@ -12,7 +11,7 @@ interface StyledCardProps {
   children: React.ReactNode;
 }
 export default function StyledCard({ variant, children }: StyledCardProps) {
-    const StyledCard = styled(Card)(({ theme }) => ({
+  const StyledCard = styled(Card)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

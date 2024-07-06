@@ -28,8 +28,9 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
-      "@utils/*": ["src/utils/*"]
-      // Adicione mais alias conforme necessário
+      "@utils/*": ["src/utils/*"],
+      "@jsons/*": ["src/jsons/*"]
+      // More aliases can be increased as needed
     }
   },
   "include": ["src"]
