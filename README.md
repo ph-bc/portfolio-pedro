@@ -27,6 +27,7 @@
 
   <h2>Deployment</h2>
   <p>This project was implemented in Vercel and is accessible <a href="https://pedro-berchior.vercel.app/">here</a>.</p>
+  
   ![Vercel](https://vercelbadge.vercel.app/api/ph-bc/portfolio-pedro)
 
   <h2>Contributions</h2>
