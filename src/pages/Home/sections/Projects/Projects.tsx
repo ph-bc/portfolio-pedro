@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <StyledSection id="projects" darkBackground>
       <Container maxWidth="lg">
-        <Grid container spacing={1} mt={3} mb={4}>
+        <Grid container spacing={1} mt={3} mb={6}>
           <Grid item xs={12} md={12}>
             <Typography
               color="primary.contrastText"
@@ -45,7 +45,7 @@ export default function Projects() {
             </Typography>
           </Grid>
           <Grid item xs={12} md={12}>
-            <Grid container spacing={6}>
+            <Grid container spacing={6} justifyContent="center">
               {/* Dynamic cards with JSON */}
               {projects.map((project) => (
                 <Grid item xs={12} md={6} key={project.name}>
@@ -103,6 +103,15 @@ export default function Projects() {
                   </StyledProjectCard>
                 </Grid>
               ))}
+              <Grid item xs={12} md={4}>
+                <StyledButton
+                  onClick={() => {
+                    window.open("https://github.com/ph-bc?tab=repositories");
+                  }}
+                >
+                  <Typography>Ver todos os projetos</Typography>
+                </StyledButton>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>

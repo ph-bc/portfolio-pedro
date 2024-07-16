@@ -19,6 +19,11 @@ export default function Hero() {
 
     [theme.breakpoints.up("xs")]: {
       paddingTop: "100px",
+
+      "& .MuiTypography-root": {
+        zIndex: "1",
+        position: "relative",
+      },
     },
     [theme.breakpoints.up("md")]: {
       paddingTop: "0",
