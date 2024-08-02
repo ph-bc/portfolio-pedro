@@ -8,7 +8,7 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 import avatar from "@assets/images/my-photo.png";
 
-import cv from "@assets/documents/cv.pdf";
+import cv from "@assets/documents/cv-pedro.pdf";
 
 const downloadCV = (cv: string) => {
   try {
