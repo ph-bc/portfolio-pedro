@@ -10,6 +10,17 @@ import avatar from "@assets/images/my-photo.png";
 
 import cv from "@assets/documents/cv.pdf";
 
+const downloadCV = (cv: string) => {
+  try {
+    const link = document.createElement("a");
+    link.href = cv;
+    link.download = "cv-pedro.pdf";
+    link.click();
+  } catch (error) {
+    console.error("Error downloading the file:", error);
+  }
+};
+
 export default function Hero() {
   const StyledHero = styled("div")(({ theme }) => ({
     height: "100vh",
@@ -76,23 +87,11 @@ export default function Hero() {
               pb={3}
             >
               <Grid item xs={12} md={5} display="flex" justifyContent="center">
-                {/* */}
+                {/* Download CV Button */}
                 <StyledButton
                   onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                     e.preventDefault();
-                    try {
-                      const link = document.createElement("a");
-                      link.href = cv;
-                      link.download = "cv.pdf";
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    } catch (error) {
-                      console.error(
-                        "Erro ao fazer o download do arquivo:",
-                        error
-                      );
-                    }
+                    downloadCV(cv);
                   }}
                 >
                   <FileDownloadIcon />
